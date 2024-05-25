@@ -72,6 +72,20 @@
         .main .right .buttons .button .arrow {
             font-size: 14px;
         }
+        .section {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -84,15 +98,41 @@
             <img src="profile_photo.png" alt="Ольга Агафонова">
         </div>
         <div class="right">
-            <div class="greeting">Привет! Я, профессиональный коуч, ментор и бизнес-тренер с многолетним опытом в различных сферах. Моя цель - помочь вам достичь личных и профессиональных высот.</div>
+            <div class="greeting">Привет! Я Ольга Агафонова, профессиональный коуч, ментор и бизнес-тренер с многолетним опытом в различных сферах. Моя цель - помочь вам достичь личных и профессиональных высот.</div>
             <div class="description">Моя деятельность охватывает коучинг, менторинг, проведение трансформационных игр и бизнес-тренингов. Я работаю с индивидуальными клиентами и группами, помогая развиваться, находить новые цели и реализовывать их. Мой опыт включает участие в крупных социальных проектах и международных программах.</div>
             <div class="buttons">
-                <button class="button">Больше обо мне <span class="arrow">↓</span></button>
-                <button class="button">Консультации <span class="arrow">↓</span></button>
-                <button class="button">Стоимость <span class="arrow">↓</span></button>
-                <button class="button">Контакты <span class="arrow">↓</span></button>
+                <button class="button" onclick="scrollToSection('about')">Больше обо мне <span class="arrow">↓</span></button>
+                <button class="button" onclick="scrollToSection('consultation')">Консультации <span class="arrow">↓</span></button>
+                <button class="button" onclick="scrollToSection('pricing')">Стоимость <span class="arrow">↓</span></button>
+                <button class="button" onclick="scrollToSection('contacts')">Контакты <span class="arrow">↓</span></button>
             </div>
         </div>
     </div>
+
+    <div id="about" class="section">
+        <h2>Больше обо мне</h2>
+        <p>Меня зовут Ольга Агафонова, и я профессиональный коуч, ментор и бизнес-тренер. Я имею многолетний опыт работы в различных сферах, таких как коучинг, менторинг и проведение трансформационных игр. Моя цель - помочь людям достигать своих личных и профессиональных целей.</p>
+    </div>
+
+    <div id="consultation" class="section">
+        <h2>Консультации</h2>
+        <p>Я предлагаю индивидуальные и групповые консультации, которые помогут вам развиваться, находить новые цели и реализовывать их. Моя работа включает коучинг, менторинг и проведение трансформационных игр.</p>
+    </div>
+
+    <div id="pricing" class="section">
+        <h2>Стоимость</h2>
+        <p>Мои услуги включают различные пакеты и программы, которые могут быть адаптированы под ваши индивидуальные потребности и цели. Свяжитесь со мной, чтобы узнать больше о стоимости и доступных опциях.</p>
+    </div>
+
+    <div id="contacts" class="section">
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной по телефону +380-99-034-20-22 или по электронной почте olga.ag1211@gmail.com. Я буду рада ответить на ваши вопросы и обсудить возможные варианты сотрудничества.</p>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
