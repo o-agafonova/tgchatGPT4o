@@ -3,124 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Консультации</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('path/to/your/background/image.png') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 20px;
-            transition: background 0.3s ease-in-out;
-        }
-        .nav a:hover {
-            background: #575757;
-            border-radius: 5px;
-        }
-        .works {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .work {
-            width: 30%;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .work img {
-            width: 100%;
-        }
-        .work-content {
-            padding: 15px;
-        }
-        .work-content h3 {
-            margin: 0 0 10px;
-        }
-        .work-content p {
-            margin: 0 0 10px;
-        }
-        .work-content a {
-            display: inline-block;
-            padding: 10px 15px;
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease-in-out;
-        }
-        .work-content a:hover {
-            background: #575757;
-        }
-    </style>
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="nav">
                 <div class="logo">
-                    <a href="#">Ваш Логотип</a>
+                    <a href="#home">Ваш Логотип</a>
                 </div>
                 <nav>
-                    <a href="#">Главная</a>
-                    <a href="#">Обо мне</a>
-                    <a href="#">Консультации</a>
-                    <a href="#">Контакты</a>
+                    <a href="#about">Обо мне</a>
+                    <a href="#works">Работы</a>
+                    <a href="#contact">Контакты</a>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="container">
-        <div class="works">
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Добро пожаловать на мой сайт</h2>
+            <p>Здесь вы найдете информацию обо мне, моих работах и как со мной связаться.</p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container about-section">
+            <h2>About me</h2>
+            <p>I'm a web designer with more than 10 years of professional experience. If you're looking for animations or 'wow effects', you'd better change direction! In my works I always try to combine aesthetic with functional aspects, looking for the right balance to communicate without annoying. What makes a great website? Here's my opinion: a successful website should be attractive but easy to read. A fascinating message, together with an immediate understanding. Original content and easily traceable information: that's my recipe!</p>
+            <div class="skills-chart">
+                <h3>My skills</h3>
+                <div class="level">
+                    <span>HTML/CSS</span>
+                    <div class="bar"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="level">
+                    <span>JavaScript</span>
+                    <div class="bar"><span style="width: 75%;"></span></div>
+                </div>
+                <div class="level">
+                    <span>Design</span>
+                    <div class="bar"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="level">
+                    <span>React</span>
+                    <div class="bar"><span style="width: 70%;"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works" class="section">
+        <div class="container works">
+            <h2>Selected works</h2>
             <div class="work">
-                <img src="path/to/your/image1.png" alt="Коучинг">
+                <img src="path/to/your/image1.png" alt="Allie">
                 <div class="work-content">
-                    <h3>Коучинг</h3>
-                    <p>"Наставничество — это искусство, которое помогает людям раскрыть свой потенциал." — Джон Уитмор.</p>
-                    <p>Коучинг — это процесс, направленный на раскрытие потенциала людей для достижения максимальной эффективности. Моя цель — помочь вам научиться, а не просто обучить. Мы вместе создадим индивидуальный план, который позволит вам достигать ваших целей и стать лучшей версией себя. На каждом этапе вы будете получать поддержку и обратную связь, чтобы ваши успехи были устойчивыми и значимыми.</p>
+                    <h3>Allie</h3>
+                    <p>Allie, the new Allianz product: mobile app and website design.</p>
                     <a href="#">Подробнее</a>
                 </div>
             </div>
             <div class="work">
-                <img src="path/to/your/image2.png" alt="Кармология">
+                <img src="path/to/your/image2.png" alt="Atalanta">
                 <div class="work-content">
-                    <h3>Кармология</h3>
-                    <p>"Счастье — это когда то, что вы думаете, говорите и делаете, находится в гармонии." — Махатма Ганди.</p>
-                    <p>Кармология — это знание, которое помогает найти решение для любой задачи и лекарства, облегчающие душевную боль. Кармический менеджмент — это метод работы с сознанием через познание себя и своего предназначения. Мы будем вместе работать над тем, чтобы найти пути гармонизации вашей жизни и достижения внутреннего покоя, используя техники самопознания и осознанности.</p>
+                    <h3>Atalanta</h3>
+                    <p>Atalanta Football Club Website.</p>
                     <a href="#">Подробнее</a>
                 </div>
             </div>
             <div class="work">
-                <img src="path/to/your/image3.png" alt="Игропрактика">
+                <img src="path/to/your/image3.png" alt="Womo">
                 <div class="work-content">
-                    <h3>Игропрактика</h3>
-                    <p>"Игра — это высшая форма исследования." — Альберт Эйнштейн.</p>
-                    <p>Игропрактика помогает выявить наибольшие внутренние ресурсы через участие в психологических и трансформационных играх. Эти игры созданы для того, чтобы вы могли лучше понять себя, свои желания и цели, а также найти нестандартные пути их достижения. Участие в таких играх способствует развитию креативного мышления и улучшению эмоционального состояния, помогая вам двигаться к своим мечтам с удовольствием.</p>
+                    <h3>Womo</h3>
+                    <p>A web design proposal: Womo, a new men's store chain.</p>
                     <a href="#">Подробнее</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container contact-section">
+            <h2>Contact me</h2>
+            <p>I live in Bergamo, Italy. I'm currently working as a Freelance and Front-End Developer at Fidor.</p>
+            <div class="contact-buttons">
+                <a href="mailto:me@sergiopedericini.com">me@sergiopedericini.com</a>
+                <a href="skype:sergiopedericini?call">sergiopedericini</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sergiopedericini" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/sergiopedericini" target="_blank">Twitter</a>
             </div>
         </div>
     </section>
